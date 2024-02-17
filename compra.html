@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Compra</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="TITULO">FORMULARIO DE COMPRA</h1>
+    </header>
+    <nav>
+        <a href="index.html">INCIO</a>
+        <a href="stock.html">STOCK</a>
+        <a href="compra.html">COMPRA</a>
+    </nav>
+    <section>
+        <form>
+            <label for="nombre">NOMBRE COMPLETO:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="direccion">DIRECCION:</label>
+            <input type="text" id="direccion" name="direccion">
+            <br>
+            <img src="IMAGENES/SODA.jpg" alt="">
+            <br>
+            <label for="cantidadsodaindividual">SODA (PRECIO: $100):</label>
+            <input type="number" id="cantidadsodaindividual" name="cantidadsodaindividual" min="0" value="0">
+            <br>
+            <img src="IMAGENES/cajon de soda.jpeg" alt="">
+            <br>
+            <label for="cantidadcajon">CAJON DE SODA (PRECIO: $550):</label>
+            <input type="number" id="cantidadcajon" name="cantidadcajon" min="0" value="0">
+            <br>
+            <br>
+            <button type="button" onclick="calcularTotal()" class="boton">COMPRAR</button>
+            <br>
+            <br>
+          </form>
+    </section>
+    <footer>
+        <p class="nombrefooter">TRABAJO DE ABRIL LEIVA</p>
+    </footer>
+
+</body>
+</html>
